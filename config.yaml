@@ -1,0 +1,40 @@
+schema_version: 3
+campaign:
+  name: "test-20261019-2"
+  title: "Schlusschoral Jesu meine Freude"
+  description: ""
+  instigator: "297915765"
+  repo_id: 1425680061
+  language: "en"
+  license: "CC-BY-4.0"
+automation:
+  central_repository: "lets-encode/lets-encode"
+  ref: "testing"
+  path: "scripts/coordinator.ts"
+source:
+  kind: "facsimile"
+  images:
+    - "sources/img/01.jpg"
+  header:
+    title: "Jesu, meine Freude"
+    composer: ""
+    publisher: ""
+    date: ""
+  rights_acknowledged: "1"
+pieces:
+  - id: "piece-01"
+    kind: "facsimile"
+    preparation: "omr"
+    path: "sources/piece-01/score.mei"
+    zones:
+      - { surface: 1, ulx: 0, uly: 0, lrx: 2481, lry: 3508 }
+    header:
+      title: ""
+      composer: ""
+fragmentation:
+  strategy: "by-piece"
+validation:
+  required_validations: 1
+  pass_threshold: 1
+locking:
+  stale_after_minutes: 1440
